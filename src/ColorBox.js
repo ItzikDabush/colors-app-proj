@@ -22,7 +22,7 @@ class ColorBox extends Component {
   }
 
   render() {
-    const { name, background, moreUrl } = this.props;
+    const { name, background, moreUrl, showLink } = this.props;
     const { copied } = this.state;
     return (
       //using the CopyToClipboard from the library in order to copy the color from the entire ColorBox
@@ -42,11 +42,12 @@ class ColorBox extends Component {
             </div>
             <button className="copy-button">COPY</button>
           </div>
-          <Link
-            to={moreUrl}
-            onClick={event => event.stopPropagation()}>
-            <span className="see-more">More</span>
-          </Link>
+
+          {showLink && (
+            <Link to={moreUrl} onClick={event => event.stopPropagation()}>
+              <span className="see-more">More</span>
+            </Link>
+          )}
         </div>
       </CopyToClipboard>
     );
