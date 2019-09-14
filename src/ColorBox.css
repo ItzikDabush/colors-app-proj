@@ -12,9 +12,9 @@
     height: 50%;
 }
 
-.ColorBox.go-back {
+.go-back {
     background-color: black;
-    /* position: relative; */
+    position: relative;
 }
 
 .copy-button, .back-button {
@@ -39,10 +39,7 @@
 .copy-button {
     opacity: 0;
 }
-.ColorBox:hover .copy-button {
-    opacity: 1;
-    transition: 0.4s;
-}
+
 
 .box-content {
     position: absolute;
