@@ -1,3 +1,6 @@
+
+import sizes from './sizes'
+
 export default {
   Palette: {
     height: "100vh",
@@ -26,7 +29,7 @@ export default {
       top: "50%",
       left: "50%",
       marginLeft: "-50px",
-      height: "-15px",
+      MarginTop: '-15px',
       textAlign: "center",
       outline: "none",
       background: "rgba(255, 255, 255, 0.3)",
@@ -35,6 +38,18 @@ export default {
       border: "none",
       cursor: "pointer",
       textDecoration: "none"
+    }    ,
+    [sizes.down('lg')]: {
+      width: '25%',
+      height: '33.33%'
+    },
+    [sizes.down('md')]: {
+      width: '50%',
+      height: '20%'
+    },
+    [sizes.down('xs')]: {
+      width: '100%',
+      height: '10%'
     }
   }
 };

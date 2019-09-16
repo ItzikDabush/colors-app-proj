@@ -15,12 +15,12 @@ export default {
     },
     [sizes.down('lg')]: {
       width: '25%',
-      height: props => (props.showingFullPalette ? "20%" : "50%"),
+      height: props => (props.showingFullPalette ? "20%" : "33.33%"),
 
     },
     [sizes.down('md')]: {
       width: '50%',
-      height: props => (props.showingFullPalette ? "10%" : "50%"),
+      height: props => (props.showingFullPalette ? "10%" : "20%"),
 
     },
     [sizes.down('xs')]: {
@@ -63,7 +63,7 @@ export default {
     top: "50%",
     left: "50%",
     marginLeft: "-50px",
-    height: "-15px",
+    marginTop: "-15px",
     textAlign: "center",
     outline: "none",
     background: "rgba(255, 255, 255, 0.3)",
@@ -76,7 +76,7 @@ export default {
   },
   boxContent: {
     position: "absolute",
-    width: "90%",
+    width: "100%",
     left: "0px",
     bottom: "0px",
     padding: "10px",
@@ -90,12 +90,12 @@ export default {
     zIndex: "0",
     width: "100%",
     height: "100%",
-    transition: "transform 0.9s ease-in-out",
+    transition: "transform 0.6s ease-in-out",
     transform: "scale(0.1)"
   },
   showOverlay: {
     opacity: "1",
-    transform: "scale(45)",
+    transform: "scale(50)",
     zIndex: "10",
     position: "absolute"
   },
@@ -120,7 +120,10 @@ export default {
       width: "100%",
       textAlign: "center",
       marginBottom: "0",
-      padding: "1rem"
+      padding: "1rem",
+      [sizes.down('xs')]: {
+        fontSize: '5rem'
+      }
     },
 
     "& p": {
@@ -128,7 +131,7 @@ export default {
       fontWeight: "100"
     }
   },
-  showMsg: {
+  showMessage: {
     opacity: "1",
     transform: "scale(1)",
     zIndex: "25",
