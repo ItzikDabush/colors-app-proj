@@ -11,12 +11,16 @@
      
       drawer: {
         width: drawerWidth,
-        flexShrink: 0
+        flexShrink: 0,
+
+
       },
       drawerPaper: {
         width: drawerWidth,
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        background: "#f5f5f5"
+
       },
       drawerHeader: {
         display: "flex",

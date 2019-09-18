@@ -83,7 +83,7 @@ class ColorPickerForm extends Component {
               backgroundColor: paletteIsFull ? "gray" : currentColor
             }}
           >
-            {paletteIsFull ? "Palette is Full" : "Add Color"}
+            {paletteIsFull ? "Palette is Full" : "Add This Color"}
           </Button>
         </ValidatorForm>
       </div>

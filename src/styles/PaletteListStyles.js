@@ -29,7 +29,7 @@ export default {
     alignItems: "center",
     flexDirection: "column",
     flexWrap: "wrap",
-    marginBottom: '5%',
+    marginBottom: '2%',
     
     [sizes.down('xl')]: {
       width: "80%",
