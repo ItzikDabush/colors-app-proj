@@ -2,7 +2,7 @@
 export default {
     root: {
       backgroundColor: "white",
-      border: "1px solid black",
+      // border: "1px solid black",
       borderRadius: "5px",
       padding: "0.5rem",
       position: "relative",
@@ -10,8 +10,8 @@ export default {
       cursor: "pointer",
       "&:hover svg": {
         opacity: 1
-
-      }
+    },
+    boxShadow: '0px 2px 24px 9px rgba(0,0,0,0.3)',
   },
     colors: {
       backgroundColor: "#dae1e4",
@@ -34,7 +34,8 @@ export default {
     
     emoji: {
       marginLeft: "0.5rem",
-      fontSize: "1.5rem"
+      fontSize: "1.5rem",
+      
   },
     
     miniColor: {
@@ -50,9 +51,9 @@ export default {
   },
   deleteIcon: {
     color: "white",
-    backgroundColor: "#eb3d30",
-    width: '20px',
-    height: '20px',
+    backgroundColor: 'transpernt',
+    width: '30px',
+    height: '25px',
     position: 'absolute',
     top: '0px',
     right: '0px',

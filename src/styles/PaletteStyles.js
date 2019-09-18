@@ -8,7 +8,7 @@ export default {
     flexDirection: "column"
   },
   colors: {
-    height: "90%"
+    height: "90%",
   },
   goBack: {
     width: "20%",

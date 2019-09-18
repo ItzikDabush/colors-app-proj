@@ -34,9 +34,11 @@ export default {
     color: props =>
       chroma(props.background).luminance() >= 0.4 ? "black" : "white"
   },
-  ColorName: {
+  colorName: {
     color: props =>
-      chroma(props.background).luminance() <= 0.08 ? "white" : "black"
+      chroma(props.background).luminance() >= 0.4 ? "black" : "white",
+
+
   },
 
   seeMore: {
@@ -50,8 +52,13 @@ export default {
     width: "60px",
     height: "30px",
     textAlign: "center",
+    // fontSize: '80%',
     lineHeight: "30px",
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    // [sizes.down('xs')]: {
+    //   height: '100%',
+    //   fontSize: '70%'
+    // }
   },
   copyButton: {
     color: props =>
@@ -72,14 +79,15 @@ export default {
     border: "none",
     cursor: "pointer",
     textDecoration: "none",
-    opacity: "0"
+    opacity: 0
   },
   boxContent: {
     position: "absolute",
-    width: "100%",
+    width: "80%",
     left: "0px",
     bottom: "0px",
-    padding: "10px",
+    paddingLeft: "3px",
+    paddingBottom: "3px",
     color: "black",
     letterSpacing: "1px",
     textTransform: "uppercase",
@@ -99,6 +107,7 @@ export default {
     zIndex: "10",
     position: "absolute"
   },
+
   copyMessage: {
     position: "fixed",
     left: "0",
@@ -125,7 +134,6 @@ export default {
         fontSize: '5rem'
       }
     },
-
     "& p": {
       fontSize: "2rem",
       fontWeight: "100"
