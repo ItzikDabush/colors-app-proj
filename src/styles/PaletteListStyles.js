@@ -19,7 +19,9 @@ export default {
      /* background by SVGBackgrounds.com */
     backgroundColor: "#9ca191",
     backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed'
+    backgroundAttachment: 'fixed',
+    overflowY: 'auto',
+ 
   },
   container: {
     width: "70%",
@@ -27,6 +29,7 @@ export default {
     alignItems: "center",
     flexDirection: "column",
     flexWrap: "wrap",
+    marginBottom: '5%',
     
     [sizes.down('xl')]: {
       width: "80%",
