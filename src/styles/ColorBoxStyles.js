@@ -98,7 +98,7 @@ export default {
     zIndex: "0",
     width: "100%",
     height: "100%",
-    transition: "transform 0.6s ease-in-out",
+    transition: "transform 1.6s ease-in-out",
     transform: "scale(0.1)"
   },
   showOverlay: {
@@ -143,7 +143,7 @@ export default {
     opacity: "1",
     transform: "scale(1)",
     zIndex: "25",
-    transition: "all 0.4s ease-in-out",
+    transition: "all 0.6s ease-in-out",
     transitionDelay: "0.3s"
   }
 };
