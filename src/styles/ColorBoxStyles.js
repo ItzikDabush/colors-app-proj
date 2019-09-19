@@ -116,6 +116,7 @@ export default {
     bottom: "0",
     display: "flex",
     alignItems: "center",
+    zIndex: '-5',
     justifyContent: "center",
     flexDirection: "column",
     fontSize: "4rem",
