@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -67,7 +66,7 @@ class PaletteMetaForm extends Component {
 
         <Dialog
           open={this.state.stage === "form"}
-          onClose={this.handleClose}
+          /* onClose={this.handleClose} */
           aria-labelledby="form-dialog-title"
           onClose={hideForm}
         >
@@ -77,7 +76,7 @@ class PaletteMetaForm extends Component {
           <ValidatorForm onSubmit={this.showEmojiPicker}>
             <DialogContent>
               <DialogContentText>
-                Please eneter a name for your new palette. Make sure it is
+                Please enter a name for your new palette. Make sure it is
                 unique.
               </DialogContentText>
 
