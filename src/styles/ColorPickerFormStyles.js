@@ -8,7 +8,7 @@ const styles = {
       width: '100%',
       padding: '1rem',
       marginTop: '1rem',
-      fontSize: '1rem'
+      fontSize: '1rem'      
     },
     colorNameInput: {
       width: '100%',

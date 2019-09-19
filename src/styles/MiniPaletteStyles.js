@@ -7,14 +7,13 @@ export default {
       padding: "0.5rem",
       position: "relative",
       overflow: "hidden",
-      cursor: "pointer",
+    cursor: "pointer",
       "&:hover svg": {
         opacity: 1
     },
     boxShadow: '0px 2px 24px 9px rgba(0,0,0,0.3)',
   },
     colors: {
-      backgroundColor: "#dae1e4",
       height: "150px",
       width: "100%",
       borderRadius: "5px",
@@ -29,7 +28,9 @@ export default {
       color: "black",
       paddingTop: "0.5rem",
       fontSize: "1rem",
-      position: "relative"
+      position: "relative",
+      lineHeight: "initial"
+ 
   },
     
     emoji: {

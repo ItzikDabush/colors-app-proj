@@ -20,7 +20,7 @@ const styles = {
     },
     [sizes.down("md")]: {
       width: "50%",
-      height: "10%"
+      height: "10%",
     },
     [sizes.down("sm")]: {
       width: "100%",
@@ -32,17 +32,19 @@ const styles = {
     width: "100%",
     left: "0px",
     bottom: "0px",
-    padding: "10px",
+    padding: "5px",
     color: props =>
-      chroma(props.color).luminance() <= 0.08 ? "rgba(255, 255, 255, 0.8)" : "rgba(0, 0, 0, 0.8)",
+      chroma(props.color).luminance() <= 0.01 ? "rgba(255, 255, 255, 0.4)" : "rgba(0, 0, 0, 0.5)",
     letterSpacing: "1px",
     textTransform: "uppercase",
     fontSize: "12px",
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    alignItems: 'center',
+
   },
   deleteIcon: {
-    transition: "all 0.6s ease-out"
+    transition: "all 0.6s ease-out",
   }
 };
 

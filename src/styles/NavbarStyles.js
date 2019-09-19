@@ -20,7 +20,7 @@ export default {
       " & a": {
         textDecoration: "none",
         color: "black"
-      }, 
+      },
       [sizes.down('xs')]: {
         display: "none"
       }
@@ -53,6 +53,6 @@ export default {
     },
     selectContainer: {
         marginLeft: 'auto',
-        marginRight: "1rem"
+      marginRight: "1rem",
       }
   };

@@ -1,5 +1,5 @@
 import sizes from "./sizes";
-import bg from './bg.svg'
+
 export default {
   "@global": {
     ".fade-exit": {
@@ -16,21 +16,20 @@ export default {
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
-     /* background by SVGBackgrounds.com */
-    backgroundColor: "#9ca191",
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
+  
+    backgroundColor: "#f5f5f5",
     overflowY: 'auto',
     lineHeight: '1'
  
   },
   container: {
-    width: "70%",
+    width: "100%",
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
     flexWrap: "wrap",
     marginBottom: '2%',
+    justifyContent: 'center',
     
     [sizes.down('xl')]: {
       width: "80%",
@@ -45,32 +44,48 @@ export default {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
-    color: "white",
+    color: "black",
     alignItems: 'center', 
     "& a": {
-      color: "white",
-      textDecoration: "none"
+      color: "black",
+      textDecoration: "none",
+      opacity: 1
+    },
+    "& a:hover": {
+      opacity: 0.7
+    },
+
+    '& img': {
+      width: '10%'
     }
   },
   palettes: {
     boxSizing: "border-box",
     width: "100%",
     display: "grid",
-    
-
-    gridTemplateColumns: "repeat(3, 30%)",
+    gridTemplateColumns: "repeat(3, 1fr)",
     gridGap: "2.5rem",
-    [sizes.down('sm')]: {
-      gridTemplateColumns: "repeat(2, 50%)",
+
+    [sizes.down('md')]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
       gridGap: "1.5rem",
-      width: "90%",
+      width: "100%",
+      
+
+    },
+
+
+    [sizes.down('sm')]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+      gridGap: "1.5rem",
+      width: "100%",
       
 
     },
     [sizes.down('xs')]: {
-      gridTemplateColumns: "repeat(1, 100%)",
+      gridTemplateColumns: "repeat(1, 1fr)",
       gridGap: "1.5rem",
-      width: "90%",
+      width: "100%",
 
     }
   }

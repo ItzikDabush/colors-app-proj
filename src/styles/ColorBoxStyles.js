@@ -37,8 +37,8 @@ export default {
   colorName: {
     color: props =>
       chroma(props.background).luminance() >= 0.4 ? "black" : "white",
-
-
+    
+    
   },
 
   seeMore: {
@@ -52,13 +52,13 @@ export default {
     width: "60px",
     height: "30px",
     textAlign: "center",
-    // fontSize: '80%',
+    fontSize: '80%',
     lineHeight: "30px",
     textTransform: "uppercase",
-    // [sizes.down('xs')]: {
-    //   height: '100%',
-    //   fontSize: '70%'
-    // }
+    [sizes.down('xs')]: {
+      height: '100%',
+      fontSize: '70%'
+    }
   },
   copyButton: {
     color: props =>
@@ -79,7 +79,13 @@ export default {
     border: "none",
     cursor: "pointer",
     textDecoration: "none",
-    opacity: 0
+    opacity: 0,
+    [sizes.down('xs')]: {
+      height: '100%',
+      fontSize: '70%',
+      marginTop: "-16px",
+
+    }
   },
   boxContent: {
     position: "absolute",
@@ -91,14 +97,21 @@ export default {
     color: "black",
     letterSpacing: "1px",
     textTransform: "uppercase",
-    fontSize: "12px"
+    fontSize: "70%",
+    [sizes.down('xs')]: {
+      width: '100%',
+      bottom: "25%",
+      left: '1%'
+     
+    }
+
   },
   copyOverlay: {
     opacity: "0",
     zIndex: "0",
     width: "100%",
     height: "100%",
-    transition: "transform 1.6s ease-in-out",
+    transition: "transform 0.6s ease-in-out",
     transform: "scale(0.1)"
   },
   showOverlay: {

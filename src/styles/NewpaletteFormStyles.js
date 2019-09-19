@@ -8,6 +8,7 @@
         display: "flex"
       },
     
+      
      
       drawer: {
         width: drawerWidth,
@@ -25,7 +26,7 @@
       drawerHeader: {
         display: "flex",
         alignItems: "center",
-        padding: "0 8px",
+        padding: "0 0px",
         width: '100%',
         ...theme.mixins.toolbar,
         justifyContent: "flex-end"
@@ -57,10 +58,13 @@
       },
     
       buttons: {
-        width: "100%"
+        width: "100%",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
       },
       button: {
-        width: "50%"
+        width: "45%",
       }
     });
     

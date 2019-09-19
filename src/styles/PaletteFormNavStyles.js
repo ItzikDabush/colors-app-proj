@@ -18,7 +18,6 @@ const styles = theme => ({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: 'center',
-    height: "64px"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -43,11 +42,16 @@ const styles = theme => ({
   },
   button: {
     margin: "0 0.5rem",
+    backgroundColor: 'grey',
     [sizes.down('xs')]: {
       margin: "0 0.2rem",
-      padding: '0.3rem'
+      padding: '0.3rem',
+      
     }
   }, 
+  header: {
+    // fontSize: '50px'
+  }
   
   
 
