@@ -21,6 +21,7 @@ export default {
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
     overflowY: 'auto',
+    lineHeight: '1'
  
   },
   container: {
