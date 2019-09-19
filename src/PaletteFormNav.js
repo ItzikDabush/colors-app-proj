@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -8,10 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Button from "@material-ui/core/Button";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import { Link } from "react-router-dom";
 import PaletteMetaForm from "./PaletteMetaForm";
 import styles from './styles/PaletteFormNavStyles'
 
@@ -29,13 +27,6 @@ class PaletteFormNav extends Component {
 
   }
 
-  componentDidMount() {
-    ValidatorForm.addValidationRule("isPaletteNameUnique", value =>
-      this.props.palettes.every(
-        ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
-      )
-    );
-  }
 
   handleChange(evt) {
     this.setState({ [evt.target.name]: evt.target.value });
@@ -50,8 +41,8 @@ class PaletteFormNav extends Component {
   }
 
   render() {
-    const { classes, open, palettes, handleSubmit } = this.props;
-    const { newPaletteName } = this.state;
+    const { classes, open, palettes, handleSubmit,handleDrawerOpen } = this.props;
+    const {formShowing } = this.state;
     return (
       <div className={classes.root}>
         <CssBaseline />
@@ -66,7 +57,7 @@ class PaletteFormNav extends Component {
             <IconButton
               color="inherit"
               aria-label="Open drawer"
-              onClick={this.props.handleDrawerOpen}
+              onClick={handleDrawerOpen}
               className={classNames(classes.menuButton, open && classes.hide)}
             >
               <MenuRoundedIcon />
@@ -95,7 +86,7 @@ class PaletteFormNav extends Component {
             </Button>
           </div>
         </AppBar>
-        {this.state.formShowing && (
+        {formShowing && (
           <PaletteMetaForm
             palettes={palettes}
             handleSubmit={handleSubmit}
