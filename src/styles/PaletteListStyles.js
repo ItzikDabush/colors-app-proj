@@ -45,6 +45,7 @@ export default {
     width: "100%",
     justifyContent: "space-between",
     marginBottom: "10px",
+    marginTop: "10px",
     color: "black",
     alignItems: 'center', 
     "& a": {
@@ -57,7 +58,7 @@ export default {
     },
 
     '& img': {
-      width: '10%'
+      width: '40px'
     }
   },
   palettes: {
