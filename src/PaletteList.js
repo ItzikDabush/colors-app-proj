@@ -14,7 +14,7 @@ import CheckIcon from "@material-ui/icons/Check";
 import CloseIcon from "@material-ui/icons/Close";
 import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
-
+import Button from "@material-ui/core/Button";
 import MiniPalette from "./MiniPalette";
 import styles from "./styles/PaletteListStyles";
 
@@ -60,7 +60,13 @@ class PaletteList extends Component {
             <h1 className={classes.heading}>Palette Creator</h1>
             <div>
             <Link to="/palette/new"> 
-              Create A Palette                    
+            <Button
+                variant="contained"
+                color="primary"
+                className={classes.button}
+              >
+                Create A New Palatte
+              </Button>                   
             </Link>
 
             </div>

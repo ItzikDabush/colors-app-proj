@@ -44,6 +44,7 @@ export default {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
+    marginBottom: "10px",
     color: "black",
     alignItems: 'center', 
     "& a": {
