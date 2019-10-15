@@ -11,7 +11,7 @@ import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import Button from "@material-ui/core/Button";
 
 import PaletteMetaForm from "./PaletteMetaForm";
-import styles from './styles/PaletteFormNavStyles'
+import styles from '../styles/PaletteFormNavStyles'
 
 
 class PaletteFormNav extends Component {

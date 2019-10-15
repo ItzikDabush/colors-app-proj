@@ -14,8 +14,8 @@ import DragableColorList from "./DragableColorList";
 import PaletteFormNav from "./PaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 
-import styles from "./styles/NewpaletteFormStyles";
-import seedColors from "./seedColors";
+import styles from "../styles/NewpaletteFormStyles";
+import seedColors from "../seedColors";
 
 
 class NewPaletteForm extends Component {

@@ -10,7 +10,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Slider from "rc-slider";
 
 import "rc-slider/assets/index.css";
-import styles from './styles/NavbarStyles';
+import styles from '../styles/NavbarStyles';
 
 // import "./Navbar.css";
 

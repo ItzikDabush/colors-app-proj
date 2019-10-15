@@ -16,8 +16,8 @@ import blue from "@material-ui/core/colors/blue";
 import red from "@material-ui/core/colors/red";
 import Button from "@material-ui/core/Button";
 import MiniPalette from "./MiniPalette";
-import styles from "./styles/PaletteListStyles";
-import img from './logo.png'
+import styles from "../styles/PaletteListStyles";
+import img from '../images/logo.png'
 
 class PaletteList extends Component {
   constructor(props) {

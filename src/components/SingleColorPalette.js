@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import PaletteFooter from "./PaletteFooter";
 import ColorBox from "./ColorBox";
 
-import styles from './styles/PaletteStyles';
+import styles from '../styles/PaletteStyles';
 
 
 class SingleColorPalette extends Component {
