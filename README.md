@@ -11,4 +11,4 @@ Made during my React learning Course.
  - React Transition Group - for animations routs transions and other few transions
   - Chroma.js for color conversions and color scales
 
-
+Website: https://color-palettes-generator.herokuapp.com
